@@ -1,0 +1,110 @@
+<html>
+    <head>
+		
+    <title>Javascript</title>
+    <script type="text/javascript">
+        function demoInternalAlert(){
+            alert("Gls unkiversity");
+        }
+        function demoInternalConfirm(){
+            if(confirm("ARE YOU SURE ABOUT YOUE SELECTION ")){
+                alert("YESSS");
+            }
+            else{
+                alert("NOOOO");
+            }
+        }
+        function demoInternalPrompt(){
+            var cName=prompt("ENTER YOUR Collage NAME ..");
+            var cName=prompt("ENTER YOUR Cource NAME..");
+            alert(fName+" "+lName);
+        }
+        function bodyBGGreen(){
+            document.body.style.backgroundColor="red";
+        }
+        function divBGGray(){
+            document.getElementById("D1").style.backgroundColor="yellow";
+        }
+        function divBGDynamic(){
+            document.getElementById("D1").style.backgroundColor=prompt("ENTER YOUR COLOR NAME HERE");
+        }
+        function bodyBGDynamic(){
+            document.body.style.backgroundColor=prompt("ENTER YOUR COLOR NAME HERE");
+        }
+        function bodyBGCP1(){
+            document.body.style.backgroundColor=document.getElementById("CP1").value;
+        }
+        function divBGCP2(){
+            document.getElementById("D1").style.backgroundColor=document.getElementById("CP2").value;
+        }
+    </script>
+    
+    <script src="scripts/demo.js" type="text/javascript"></script>
+    <style type="text/css">
+        body{background-color: rgb(32, 163, 233);}    
+    </style>
+    
+</head>
+
+    <div id="D1"><marquee>
+           <center>
+            <img src="image.jpg" alt="Silver Oak University" width="1000" height="300">
+            </center>
+        </b>
+    </marquee>
+    </div>
+    <hr>
+
+    <div style="text-align: center;">
+
+        <body style="background-color: rgb(237, 232, 232);"></body>
+    <b>Collage Name</b>
+    <br>
+    <br>
+    <input type="button" value="C NAME" onclick="alert('')">&nbsp;&nbsp;<br><br><hr>
+    </div>
+
+    <center>
+        
+    <b>Cource Name</b>
+    <br>
+    <br>   
+    <input type="button" value="COURCE NAME" onclick="alert('')">&nbsp;&nbsp;<br><br><hr>
+
+    <b>Student Name</b>
+    <br>
+    <br>
+    <input type="button" value="S NAME" onclick="prompt('')">&nbsp;&nbsp;<br><br><hr>
+
+    <hr>
+    <b>Enrolment Number</b>
+    <br>
+    <br>
+    <input type="button" value="E NUMBER" onclick="prompt('')">&nbsp;&nbsp;<br><br><hr>
+
+    <b>Subject Name</b>
+    <br>
+    <br>
+    <input type="button" value="S NAME" onclick="prompt('')">&nbsp;&nbsp;<br><br><hr>
+
+    <hr>
+    <b>Subject Mark </b>
+    <br>
+    <br>
+    <input type="button" value="Marks" onclick="prompt('')">&nbsp;&nbsp;<br><br><hr>
+
+    <b>Study Cource</b>
+    <br>
+    <br>
+    <input type="button" value="COURCE" onclick="prompt('')">&nbsp;&nbsp;<br><br><hr>
+
+    
+    <b>Bg Color</b>
+    <br>
+    <br>
+    <input type="color" id="CP1" onchange="bodyBGCP1('')">&nbsp;&nbsp;<br><br><hr>
+  
+   </center>
+
+</body>
+</html>
